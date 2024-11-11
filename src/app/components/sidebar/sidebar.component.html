@@ -2,11 +2,28 @@
   class="fixed top-16 w-80 shadow-lg rounded border border-gray-300 h-[calc(100vh_-_4rem)]"
 >
   <ul>
-    <li [routerLink]="'/'" class="p-4 cursor-pointer" routerLinkActive="">
+    <li
+      [routerLink]="'/'"
+      class="p-4 cursor-pointer text-blue-600"
+      routerLinkActive="bg-blue-100 border-l-4 border-blue-500"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
       All
     </li>
 
-    <li [routerLink]="'/Important'" class="p-4 cursor-pointer">Important</li>
-    <li [routerLink]="'/Completed'" class="p-4 cursor-pointer">Completed</li>
+    <li
+      [routerLink]="'/Important'"
+      class="p-4 cursor-pointer text-blue-600"
+      routerLinkActive="bg-blue-100 border-l-4 border-blue-500"
+    >
+      Important
+    </li>
+    <li
+      [routerLink]="'/Completed'"
+      class="p-4 cursor-pointer text-blue-600"
+      routerLinkActive="bg-blue-100 border-l-4 border-blue-500"
+    >
+      Completed
+    </li>
   </ul>
 </aside>
