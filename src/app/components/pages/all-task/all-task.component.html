@@ -1,19 +1,24 @@
 <h4 class="font-bold text-base">My Day</h4>
-<div class="text-blue-950"><span>Sunday</span>, <span>Dec 21, 2024</span></div>
+<div class="text-blue-950">
+  <span>{{ today | date : "MMM d, y, h:mm:ss a" }} </span>
+</div>
 
 <div class="flex mt-6">
   <input
     type="text"
     class="w-full h-16 px-4 py-2 shadow"
     placeholder="type your task"
-    name=""
-    id=""
+    [(ngModel)]="newTask"
+    (keydown.enter)="addTask()"
   />
 </div>
 
 <div class="flex flex-col mt-6">
   <h2 class="font-bold text-xl">Tasks</h2>
+
+  @for (task of taskList; track task){
   <p class="bg-white w-full h-16 px-4 py-2 shadow flex items-center mt-2 mb-2">
-    task 1
+    {{ task.title }}
   </p>
+  }
 </div>
