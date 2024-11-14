@@ -1,6 +1,6 @@
 <h4 class="font-bold text-base">My Day</h4>
 <div class="text-blue-950">
-  <span>{{ today | date : "MMM d, y, h:mm:ss a" }} </span>
+  <!-- <span>{{ today | date : "MMM d, y, h:mm:ss a" }} </span> -->
 </div>
 
 <div class="flex mt-6">
@@ -16,11 +16,7 @@
 <div class="flex flex-col mt-6">
   <h2 class="font-bold text-xl">Tasks</h2>
 
-<<<<<<< HEAD
   @for (task of taskList; track task ){
-=======
-  @for (task of taskList; track task){
->>>>>>> 384b87976bdc7dcc8a6a75a4de259decead4f789
   <p class="bg-white w-full h-16 px-4 py-2 shadow flex items-center mt-2 mb-2">
     {{ task.title }}
   </p>
