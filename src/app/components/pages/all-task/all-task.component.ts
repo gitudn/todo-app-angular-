@@ -1,7 +1,7 @@
 import { Component, Inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpService } from '../../../services/http.service';
-import { DatePipe } from '@angular/common';
+import { DatePipe, SlicePipe } from '@angular/common';
 import { PageTitleComponent } from '../../page-title/page-title.component';
 import { TaskListComponent } from '../../task-list/task-list.component';
 
@@ -35,6 +35,14 @@ export class AllTaskComponent {
     this.httpService.getAllTasks().subscribe((result: any) => {
       this.taskList = result;
     });
+  }
+
+  onComplete(task: any) {
+    console.log('complete', task);
+  }
+
+  onImportant(task: any) {
+    console.log('Important', task);
   }
 }
 
