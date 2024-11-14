@@ -1,8 +1,14 @@
 <h2 class="font-bold text-xl">Tasks</h2>
 
 @for (task of taskList; track task){
+<p
+  class="bg-white w-full h-16 px-4 py-2 rounded shadow flex items-center mt-2 mb-2"
+>
+  {{ task.title }}
+</p>
+}
 
-<div
+<!-- <div
   class="bg-white w-full h-16 px-4 py-2 shadow flex justify-between items-center mt-2 mb-2 pr-14"
 >
   <p>{{ task.title }}</p>
@@ -40,4 +46,4 @@
   </div>
 </div>
 
-}
+} -->
