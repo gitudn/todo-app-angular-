@@ -2,99 +2,141 @@
   "tasks": [
     {
       "id": "1",
-      "title": "Hello Angular"
+      "title": "Hello Angular",
+      "important": true,
+      "completed": true
     },
     {
       "id": "b8de",
-      "title": "dfvb"
+      "title": "dfvb",
+      "important": true,
+      "completed": true
     },
     {
       "id": "7444",
-      "title": "dfvb,"
+      "title": "dfvb,",
+      "completed": true,
+      "important": true
     },
     {
       "id": "5148",
-      "title": "dfvb,guikgi"
+      "title": "dfvb,guikgi",
+      "important": true,
+      "completed": true
     },
     {
       "id": "135d",
-      "title": "g"
+      "title": "g",
+      "completed": true,
+      "important": true
     },
     {
       "id": "4579",
-      "title": "k"
+      "title": "k",
+      "completed": true,
+      "important": true
     },
     {
       "id": "7751",
-      "title": "k"
+      "title": "k",
+      "completed": true,
+      "important": true
     },
     {
       "id": "bd40",
-      "title": "p"
+      "title": "p",
+      "important": true,
+      "completed": true
     },
     {
       "id": "969f",
-      "title": "ggg"
+      "title": "ggg",
+      "important": true
     },
     {
       "id": "8595",
-      "title": "u"
+      "title": "u",
+      "important": true,
+      "completed": true
     },
     {
       "id": "81fa",
-      "title": "jossh"
+      "title": "jossh",
+      "completed": true,
+      "important": true
     },
     {
       "id": "9fae",
-      "title": "d"
+      "title": "d",
+      "completed": true,
+      "important": true
     },
     {
       "id": "285e",
-      "title": "f"
+      "title": "f",
+      "completed": true
     },
     {
       "id": "568b",
-      "title": "g"
+      "title": "g",
+      "important": true
     },
     {
       "id": "fc17",
-      "title": "y"
+      "title": "y",
+      "important": true
     },
     {
       "id": "cbc7",
-      "title": "yatsshhhhhhhh"
+      "title": "yatsshhhhhhhh",
+      "completed": true
     },
     {
       "id": "44c9",
-      "title": "fgbfnf"
+      "title": "fgbfnf",
+      "important": true,
+      "completed": true
     },
     {
       "id": "6635",
-      "title": "g"
+      "title": "g",
+      "important": true,
+      "completed": true
     },
     {
       "id": "806e",
-      "title": "h"
+      "title": "h",
+      "completed": true,
+      "important": true
     },
     {
       "id": "25ae",
-      "title": "ggg"
+      "title": "ggg",
+      "important": true,
+      "completed": true
     },
     {
       "id": "e61a",
-      "title": "u"
+      "title": "u",
+      "important": true,
+      "completed": true
     },
     {
       "id": "ee8c",
-      "title": "y"
+      "title": "y",
+      "important": true,
+      "completed": true
     },
     {
       "id": "06de",
-      "title": "e"
+      "title": "e",
+      "important": true,
+      "completed": true
     },
     {
       "id": "8c64",
-      "title": "q"
+      "title": "q",
+      "completed": true
     },
     {
       "id": "eebd",
@@ -102,11 +144,13 @@
     },
     {
       "id": "c439",
-      "title": "j"
+      "title": "j",
+      "important": true
     },
     {
       "id": "de61",
-      "title": "i"
+      "title": "i",
+      "completed": true
     },
     {
       "id": "0ed9",
@@ -114,7 +158,9 @@
     },
     {
       "id": "fb2c",
-      "title": "f"
+      "title": "f",
+      "important": true,
+      "completed": true
     }
   ]
 }

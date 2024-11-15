@@ -38,11 +38,15 @@ export class AllTaskComponent {
   }
 
   onComplete(task: any) {
+    task.completed = true;
     console.log('complete', task);
+    this.httpService.updateTask(task).subscribe(() => {});
   }
 
   onImportant(task: any) {
+    task.important = true;
     console.log('Important', task);
+    this.httpService.updateTask(task).subscribe(() => {});
   }
 }
 
