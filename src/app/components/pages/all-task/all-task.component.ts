@@ -4,6 +4,7 @@ import { HttpService } from '../../../services/http.service';
 import { DatePipe, SlicePipe } from '@angular/common';
 import { PageTitleComponent } from '../../page-title/page-title.component';
 import { TaskListComponent } from '../../task-list/task-list.component';
+import { StateService } from '../../../services/state.service';
 
 @Component({
   selector: 'app-all-task',
@@ -17,9 +18,21 @@ export class AllTaskComponent {
   taskList: any[] = [];
 
   // Inject HttpService via constructor
-  constructor(private httpService: HttpService) {}
+  constructor(
+    private httpService: HttpService,
+    private stateService: StateService
+  ) {}
+
   // ngOnInit method to load all tasks initially
+
   ngOnInit() {
+    this.stateService.searchSubject.subscribe((value) => {
+      if (value) {
+        this.taskList = this.taskList.filter((x) =>
+          x.title.toLowerCase().includes(value.toLowerCase())
+        );
+      }
+    });
     this.getAllTasks();
   }
 
@@ -45,19 +58,11 @@ export class AllTaskComponent {
 
   onImportant(task: any) {
     task.important = true;
-    console.log('Important', task);
-    this.httpService.updateTask(task).subscribe(() => {});
+    this.httpService.updateTask(task).subscribe(() => {
+      this.getAllTasks();
+    });
+  }
+  search(searchTerm: any) {
+    console.log(searchTerm);
   }
 }
-
-// export class AllTaskComponent {
-//   newTask = '';
-//   httpService = Inject(HttpService);
-
-//   addTask() {
-//     console.log('addTask', this.newTask);
-//     this.httpService.addTask(this.newTask).subscribe(() => {
-//       console.log('added');
-//     });
-//   }
-// }

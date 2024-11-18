@@ -74,7 +74,8 @@
     {
       "id": "285e",
       "title": "f",
-      "completed": true
+      "completed": true,
+      "important": true
     },
     {
       "id": "568b",
@@ -154,7 +155,8 @@
     },
     {
       "id": "0ed9",
-      "title": "a"
+      "title": "a",
+      "important": true
     },
     {
       "id": "fb2c",
@@ -169,6 +171,42 @@
     {
       "id": "9f12",
       "title": "y",
+      "important": true,
+      "completed": true
+    },
+    {
+      "id": "1553",
+      "title": "f"
+    },
+    {
+      "id": "d703",
+      "title": "u",
+      "completed": true,
+      "important": true
+    },
+    {
+      "id": "c169",
+      "title": "new task added"
+    },
+    {
+      "id": "944e",
+      "title": "new task only complited",
+      "completed": true
+    },
+    {
+      "id": "ad16",
+      "title": "new task only importanr",
+      "important": true
+    },
+    {
+      "id": "a4f8",
+      "title": "new task important and complited also",
+      "important": true,
+      "completed": true
+    },
+    {
+      "id": "bb5b",
+      "title": "v",
       "important": true,
       "completed": true
     }

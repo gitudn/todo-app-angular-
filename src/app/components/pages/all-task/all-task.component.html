@@ -1,4 +1,4 @@
-<app-page-title></app-page-title>
+<app-page-title (search)="search($event)"></app-page-title>
 
 <div class="flex mt-6">
   <input
@@ -11,13 +11,6 @@
 </div>
 
 <div class="flex flex-col mt-6">
-  <!-- <h2 class="font-bold text-xl">Tasks</h2> -->
-
-  <!-- @for (task of taskList; track task ){
-  <p class="bg-white w-full h-16 px-4 py-2 shadow flex items-center mt-2 mb-2">
-    {{ task.title }}
-  </p>
-  } -->
   <app-task-list
     [taskList]="taskList"
     (complete)="onComplete($event)"
